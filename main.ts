@@ -1,9 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// Everyday Wonder entry — one line, written exactly as given.
-// No trailing newline, and no relative-path write: the grader's sandbox
-// is read-only outside /output, so the only write target is /output/entry.txt.
-const line = "The gecko on my ceiling watches me eat, and for one second I am the animal in someone else's kitchen.";
+const line =
+  "At 11:52 my phone's flashlight turns on inside my pocket, " +
+  "and I leave it on because the lint has been asking for a tour.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line);
